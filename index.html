@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Valley Zoo</title>
+
+    <!-- Bootstrap ONLY for carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="apple-touch-icon.png" type="image/png">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <!-- NAVBAR INSIDE HERO -->
+    <div class="navbar">
+        <div class="logo">
+       <img src="logo.jpeg" alt="Logo">
+     </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="animals.html">Animals</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+<div class="search">
+
+    <!-- INPUT WITH DROPDOWN -->
+    <input type="text" id="searchBox" list="animals" placeholder="Search animals">
+
+    <!-- OPTIONS -->
+    <datalist id="animals">
+        <option value="Wild-animals">
+        <option value="Birds">
+    </datalist>
+
+    <button onclick="searchAnimal()">Search</button>
+
+</div>
+    </div>
+
+    <!-- HERO TEXT -->
+    <div class="hero-text">
+        <h1>Welcome to Green Valley 🐻Zoo</h1>
+        <p>Explore the wild side!</p>
+    </div>
+
+</section>
+
+<!-- MIDDLE CARDS -->
+<div class="middle-cards">
+
+    <a href="animals.html" class="mid-card">
+        <span>🐯</span>
+        <p>Meet the Animals</p>
+    </a>
+
+    <a href="tickets.html" class="mid-card">
+        <span>🎟️</span>
+        <p>Buy Tickets</p>
+    </a>
+
+    <a href="map.html" class="mid-card">
+        <span>🗺️</span>
+        <p>Zoo Map</p>
+    </a>
+
+    <a href="events.html" class="mid-card">
+        <span>🎈</span>
+        <p>Events & Activities</p>
+    </a>
+
+</div>
+
+<!-- CAROUSEL -->
+<section class="carousel-section">
+
+<div id="zooCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="animal-row">
+
+                <div class="animal">
+                    <img src="lion.jpg">
+                    <h3>Lion</h3>
+                </div>
+
+                <div class="animal">
+                    <img src="elephant.jpg">
+                    <h3>Elephant</h3>
+                </div>
+
+                <div class="animal">
+                    <img src="giraffe.jpg">
+                    <h3>Giraffe</h3>
+                </div>
+
+                <div class="animal">
+                    <img src="panda.jpg">
+                    <h3>Panda</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="animal-row">
+
+                <div class="animal">
+                    <img src="tiger.jpg">
+                    <h3>Tiger</h3>
+                </div>
+
+                <div class="animal">
+                    <img src="zebra.jpg">
+                    <h3>Zebra</h3>
+                </div>
+
+                <div class="animal">
+                    <img src="monkey.jpg">
+                    <h3>Monkey</h3>
+                </div>
+
+                <div class="animal">
+                    <img src="deer.jpg">
+                    <h3>Deer</h3>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" data-bs-target="#zooCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" data-bs-target="#zooCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+</section>
+
+<!-- Bootstrap JS -->
+ <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

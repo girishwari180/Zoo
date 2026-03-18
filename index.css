@@ -1,0 +1,333 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background: linear-gradient(to bottom,#134e5e, #71b280);
+    background-attachment: fixed;
+}
+.logo img {
+  height: 80px;        
+  width: 220px;        
+  object-fit: cover;   
+  border-radius: 50%;  
+}
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("zoo.png");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    transition: 0.3s;
+    font-style: bold;
+}
+
+.nav-links a:hover {
+    color: #90ee90;
+}
+
+/* SEARCH BAR */
+.search input {
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.search button {
+    padding: 12px 18px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background: darkgreen;
+}
+
+/* HERO TEXT */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 28px;
+}
+
+/* MIDDLE CARDS */
+.middle-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+
+    margin-top: -80px;
+    position: relative;
+    z-index: 2;
+}
+
+.mid-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+    background: linear-gradient(45deg, #2e7d32, #66bb6a);
+    padding: 25px;
+    width: 190px;
+    text-align: center;
+    border-radius: 20px;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* HOVER = BUTTON PRESS EFFECT */
+.mid-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* CLICK EFFECT 🔥 */
+.mid-card:active {
+    transform: scale(0.95);
+}
+
+/* ICON */
+.mid-card span {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* CAROUSEL SECTION */
+.carousel-section {
+    padding: 90px;
+    background:url(trees.jpg) no-repeat center/cover;
+}
+
+/* ROW */
+.animal-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* CARD */
+.animal {
+    background: rgb(238, 241, 237);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.animal:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.animal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.animal h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+/* ======================== */
+/* TABLET STYLES (768px–1024px) */
+/* ======================== */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .hero-text p {
+        font-size: 22px;
+    }
+
+    .nav-links a {
+        font-size: 35px;
+        margin: 0 10px;
+    }
+
+    .search input {
+        width: 220px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .search button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .middle-cards {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .mid-card {
+        width: 150px;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .mid-card span {
+        font-size: 35px;
+    }
+
+    .carousel-section {
+        padding: 60px 30px;
+    }
+
+    .animal {
+        width: 200px;
+    }
+
+    .animal img {
+        height: 160px;
+    }
+
+    .animal h3 {
+        font-size: 20px;
+    }
+}
+
+/* ======================== */
+/* MOBILE STYLES (≤767px) */
+/* ======================== */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+        margin: 5px 10px;
+    }
+
+    .search {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .search input {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search button {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .middle-cards {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: -50px;
+    }
+
+    .mid-card {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .mid-card span {
+        font-size: 30px;
+    }
+
+    .carousel-section {
+        padding: 40px 15px;
+    }
+
+    .animal-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .animal {
+        width: 100%;
+    }
+
+    .animal img {
+        height: 200px;
+    }
+
+    .animal h3 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="icon" href="apple-touch-icon.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <h2>Green Valley Zoo</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="animals.html">Animals</a>
+        <a href="tickets.html">Tickets</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+</header>
+
+<section class="ticket-section">
+    <div class="ticket-container">
+
+        <h1>Book Your Tickets</h1>
+
+        <label>Select Date:</label>
+        <input type="date" id="date">
+
+        <div class="ticket-box">
+            <p>Adult (₹200)</p>
+            <input type="number" id="adult" value="0" min="0">
+        </div>
+
+        <div class="ticket-box">
+            <p>Child (₹100)</p>
+            <input type="number" id="child" value="0" min="0">
+        </div>
+
+        <div class="ticket-box">
+            <p>Senior (₹150)</p>
+            <input type="number" id="senior" value="0" min="0">
+        </div>
+
+        <h2>Total: ₹<span id="total">0</span></h2>
+
+        <button onclick="calculateTotal()">Calculate</button>
+        <button onclick="bookNow()">Book Now</button>
+        
+    </div>
+</section>
+
+<script src="tickets.js"></script>
+
+</body>
+</html>

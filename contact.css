@@ -1,0 +1,107 @@
+
+body{
+height: 1000px;
+display:flex;
+justify-content:center;
+align-items:center;
+background: url(trees.jpg) no-repeat center/cover;
+}
+.navbar {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color:rgb(3, 4, 3);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-size: 30px;
+  text-decoration: none;
+
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(11, 13, 10);
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.container{
+display:flex;
+gap:40px;
+}
+
+.contact-box{
+width:350px;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 20px 45px rgba(0,0,0,0.35);
+border-left:6px solid #D4AF37;
+}
+
+.contact-box h2{
+color:#0F2027;
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin:12px 0;
+color:#333;
+font-size:26px;
+}
+
+/* Enquiry Box (Right) */
+.enquiry-box{
+width:350px;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.enquiry-box h2{
+color:#6a11cb;
+margin-bottom:20px;
+}
+
+/* Form Inputs */
+.enquiry-box input,
+.enquiry-box textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:25px;
+}
+
+.enquiry-box button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background: linear-gradient(135deg, #000000, #379dd4,black);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.enquiry-box button:hover{
+transform:scale(1.05);
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+.container{
+flex-direction:column;
+}
+}

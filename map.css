@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #d4f1c5, #a8e063, #56ab2f);
+}
+
+.map-section {
+    padding: 50px;
+}
+
+.map-section h1 {
+    font-size: 50px;
+}
+
+.map-section p {
+    font-size: 22px;
+}
+
+.map-section img {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.legend {
+    margin: 30px auto;
+    padding: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+}
