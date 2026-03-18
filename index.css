@@ -186,6 +186,34 @@ body {
     margin-top: 15px;
     font-size: 24px;
 }
+ .ticker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(61, 143, 48);
+  color: rgb(14, 2, 2);
+  padding: 10px 0;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: tickerMove 10s linear infinite;
+}
+.ticker span {
+    display: inline-block;
+    
+    font-size: 45px;
+   
+   
+  }
+ @keyframes tickerMove {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 /* ======================== */
 /* TABLET STYLES (768px–1024px) */
 /* ======================== */
